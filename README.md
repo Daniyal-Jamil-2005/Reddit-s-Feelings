@@ -4,13 +4,24 @@
 
   ### *Skip the endless scrolling — see what Reddit really thinks.*
 
-  [![Streamlit App](https://img.shields.io/badge/Streamlit-1.37+-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://streamlit.io)
-  [![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-  [![Reddit PRAW](https://img.shields.io/badge/Reddit_API-PRAW_7.7-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](https://praw.readthedocs.io)
-  [![NLP VADER](https://img.shields.io/badge/NLP-NLTK_VADER-009688?style=for-the-badge&logo=nltk&logoColor=white)](https://www.nltk.org)
-  [![License](https://img.shields.io/badge/License-MIT-blue.style=for-the-badge)](LICENSE)
+  <br />
+
+  [![🚀 Launch Live Web App](https://img.shields.io/badge/🌐_TRY_THE_LIVE_APP-reddits--feelings.streamlit.app-FF4500?style=for-the-badge&logo=streamlit&logoColor=white)](https://reddits-feelings.streamlit.app/)
+
+  <br />
+
+  [![Streamlit App](https://img.shields.io/badge/Streamlit-1.37+-FF4B4B?style=flat-square&logo=Streamlit&logoColor=white)](https://reddits-feelings.streamlit.app/)
+  [![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+  [![Reddit PRAW](https://img.shields.io/badge/Reddit_API-PRAW_7.7-FF4500?style=flat-square&logo=reddit&logoColor=white)](https://praw.readthedocs.io)
+  [![NLP VADER](https://img.shields.io/badge/NLP-NLTK_VADER-009688?style=flat-square&logo=nltk&logoColor=white)](https://www.nltk.org)
+  [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 
 </div>
+
+<br />
+
+> [!TIP]
+> 🚀 **LIVE DEMO AVAILABLE**: Try **Reddit's Feelings** instantly in your browser at **[reddits-feelings.streamlit.app](https://reddits-feelings.streamlit.app/)** — no installation, local setup, or API keys required!
 
 ---
 
@@ -20,7 +31,7 @@ Ever wondered how Reddit feels about something? Trying a product, researching a 
 
 **Reddit's Feelings** (or *Redditors Feelings*) is an intelligent sentiment consensus engine that analyzes Reddit in real-time. Simply enter any product, brand, media, or name, and the app scans hundreds of community discussions, extracts sentiment vectors, weights opinions by community engagement (upvotes + comments), and delivers a definitive **0–100 Verdict Score** alongside key themes and critical feedback.
 
-> **Skip the endless scrolling — get the true pulse of the Reddit community in seconds.**
+👉 **Experience it live right now at [reddits-feelings.streamlit.app](https://reddits-feelings.streamlit.app/)**
 
 ---
 
@@ -50,6 +61,7 @@ Ever wondered how Reddit feels about something? Trying a product, researching a 
 
 ## ✨ Key Features
 
+- **🌐 Live Web App**: Accessible 24/7 at **[reddits-feelings.streamlit.app](https://reddits-feelings.streamlit.app/)**.
 - **🎯 0–100 Community Verdict Score**: Replaces ambiguous sentiment metrics with a clear, single index score ranging from *Overwhelmingly Negative* to *Overwhelmingly Positive*.
 - **📊 Engagement-Weighted Scoring**: Posts with higher upvotes and comment volume carry logarithmic weight, ensuring top community voices shape the verdict over noise.
 - **🏷️ Key Theme Extraction**: Automatically classifies posts into *What Reddit Loves* (Positive highlights) and *Main Complaints & Critiques* (Negative highlights).
@@ -85,6 +97,7 @@ flowchart LR
 
 | Domain | Technology / Library | Purpose |
 |---|---|---|
+| **Live App Hosting** | [Streamlit Community Cloud](https://reddits-feelings.streamlit.app/) | Instant production deployment & public availability |
 | **Frontend UI** | [Streamlit 1.37+](https://streamlit.io) | Dynamic responsive web application interface |
 | **API Integration** | [PRAW 7.7](https://praw.readthedocs.io) | Read-only Python Reddit API Wrapper |
 | **NLP & Sentiment** | [NLTK](https://www.nltk.org) (VADER + WordNet) | Polarity scoring, lemmatization, and phrase extraction |
@@ -114,9 +127,9 @@ Reddit's Feelings/
 
 ---
 
-## 🚀 Installation & Setup
+## 🚀 Installation & Local Setup
 
-> **Note**: Follow these steps to set up and run *Reddit's Feelings* locally on your machine.
+> **Note**: Want to try the app without setup? Visit the **[Live Demo](https://reddits-feelings.streamlit.app/)**.
 
 ### Prerequisites
 
@@ -162,7 +175,7 @@ REDDIT_USER_AGENT=redditsfeelings:v1.0 (by u/your_reddit_username)
 
 ---
 
-### 4. Run the Streamlit Application
+### 4. Run the Streamlit Application Locally
 
 ```bash
 streamlit run app.py
@@ -178,7 +191,7 @@ Deploying *Reddit's Feelings* online is free and takes less than 2 minutes:
 
 1. Push your repository to GitHub (ensure `.env` is ignored).
 2. Go to [share.streamlit.io](https://share.streamlit.io) and create a new app pointing to `app.py`.
-3. Under **App Settings → Secrets**, enter your credentials:
+3. Under **App Settings → Secrets**, enter your credentials in TOML format:
    ```toml
    REDDIT_CLIENT_ID = "your_client_id_here"
    REDDIT_CLIENT_SECRET = "your_client_secret_here"
@@ -202,5 +215,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ---
 
 <div align="center">
-  <sub>Built with ❤️ using Python & Streamlit</sub>
+  <sub>Built with ❤️ using Python & Streamlit • <a href="https://reddits-feelings.streamlit.app/">Launch Live App</a></sub>
 </div>
