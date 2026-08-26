@@ -1,0 +1,31 @@
+# Environment variables & secrets (CRITICAL: Do not commit!)
+.env
+.env.local
+.env.*.local
+*.env
+
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Streamlit local settings
+.streamlit/secrets.toml
+
+# IDE & Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
